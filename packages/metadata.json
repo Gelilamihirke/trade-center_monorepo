@@ -1,6 +1,0 @@
-{
-  "name": "TaskFlow Monorepo",
-  "description": "A comprehensive task management system built with a Turborepo monorepo architecture, featuring 10 distinct feature packages.",
-  "requestFramePermissions": [],
-  "majorCapabilities": []
-}
