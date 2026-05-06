@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@taskflow/ui-components": ["./packages/ui-components/src/index.tsx"],
+      "@taskflow/utils": ["./packages/utils/src/index.ts"],
+      "@taskflow/feature-tasks": ["./packages/feature-tasks/src/index.tsx"],
+      "@taskflow/feature-auth": ["./packages/feature-auth/src/index.tsx"],
+      "@taskflow/feature-projects": ["./packages/feature-projects/src/index.tsx"],
+      "@taskflow/feature-teams": ["./packages/feature-teams/src/index.tsx"],
+      "@taskflow/feature-calendar": ["./packages/feature-calendar/src/index.tsx"],
+      "@taskflow/feature-notifications": ["./packages/feature-notifications/src/index.tsx"],
+      "@taskflow/feature-comments": ["./packages/feature-comments/src/index.tsx"],
+      "@taskflow/feature-attachments": ["./packages/feature-attachments/src/index.tsx"],
+      "@taskflow/feature-reports": ["./packages/feature-reports/src/index.tsx"],
+      "@taskflow/feature-settings": ["./packages/feature-settings/src/index.tsx"],
+      "@/*": ["./*"]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
+}
