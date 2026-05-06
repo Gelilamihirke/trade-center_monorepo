@@ -1,0 +1,14 @@
+{
+  "name": "@taskflow/feature-attachments",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.tsx"
+  },
+  "dependencies": {
+    "@taskflow/ui-components": "workspace:*",
+    "@taskflow/utils": "workspace:*",
+    "lucide-react": "0.546.0"
+  }
+}
