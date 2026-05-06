@@ -1,0 +1,26 @@
+{
+  "name": "@taskflow/demo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+"dependencies": {
+    "@taskflow/ui-components": "workspace:*",
+    "@taskflow/utils": "workspace:*",
+    "@taskflow/feature-auth": "workspace:*",
+    "@taskflow/feature-tasks": "workspace:*",
+    "@taskflow/feature-projects": "workspace:*",
+    "@taskflow/feature-teams": "workspace:*",
+    "@taskflow/feature-calendar": "workspace:*",
+    "@taskflow/feature-notifications": "workspace:*",
+    "@taskflow/feature-comments": "workspace:*",
+    "@taskflow/feature-attachments": "workspace:*",
+    "@taskflow/feature-reports": "workspace:*",
+    "@taskflow/feature-settings": "workspace:*"
+},
+ "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+
+}
