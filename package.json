@@ -1,20 +1,38 @@
 {
-  "name": "R",
+  "name": "taskflow-monorepo",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "dev": "vite apps/demo --port=3000 --host=0.0.0.0",
+    "build": "vite build apps/demo --outDir ../../dist",
+    "preview": "vite preview apps/demo",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules **/*/node_modules **/*/dist"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "lucide-react": "^0.546.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "motion": "^12.23.24",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
-    "prettier": "^3.7.4",
-    "turbo": "^2.9.9",
-    "typescript": "5.9.2"
-  },
-  "packageManager": "pnpm@9.0.0",
-  "engines": {
-    "node": ">=18"
+    "@tailwindcss/vite": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3",
+    "turbo": "latest"
   }
 }
